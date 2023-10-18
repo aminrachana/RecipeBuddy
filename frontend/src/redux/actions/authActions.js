@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
-const BASE_URL = 'http://localhost:3000/api'
+const BASE_URL = 'https://recipe-buddy-api.onrender.com/api'
 
 export const loginUser = createAsyncThunk(
     'auth/login',
