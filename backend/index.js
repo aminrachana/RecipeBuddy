@@ -22,6 +22,9 @@ app.use('/api/rating', ratingRouter)
 app.use('/api/comment', commentRouter)
 app.use('/api/ingredient', ingredientsRouter)
 
+app.get('/', (req, res) => {
+    res.json('Welcome to Recipe Buddy API');
+})
 
 app.listen(PORT, () => {
     console.log(`Server Started at ${PORT}`)
